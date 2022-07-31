@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title  %}About{% endblock  %}
+{% block styles %}
+<style>
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(215, 215, 215); 
+    border-radius: 4px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #007BFF; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #007BFE; 
+  }
+  .container{
+    width: 100%;
+    text-align: center;
+  }
+  .container .col{
+   padding-left: 70px;
+    justify-content: space-between;
+  }
+.row{
+  margin-left: -10px;
+}
+.section-image{
+  width: 90px;
+  height: 90px;
+}
+
+  @media only screen and (max-width:590px){
+    .container .section-image{
+      width: 43px;
+      height: 40px;
+    }
+    .container .row{
+      padding: 5px;
+      margin-left: -30px;
+    }
+    .container .col1{
+        margin-left:0px;
+    }
+    .container h4{
+     font-size: medium;
+    }
+  }
+</style>
+{% endblock %}
+{% block content %}
+{% load static %}
+ 
+
+{% endblock  %}
